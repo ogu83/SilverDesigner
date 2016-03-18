@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverDesigner", "SilverDesigner\SilverDesigner.csproj", "{6C9D438F-9C2A-4453-8D47-E59153CEE5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverDesigner.Web", "SilverDesigner.Web\SilverDesigner.Web.csproj", "{0F02308D-B3EF-454C-BCC2-1AAFD471905C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C9D438F-9C2A-4453-8D47-E59153CEE5B0} = {6C9D438F-9C2A-4453-8D47-E59153CEE5B0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.ViewModels", "SD.ViewModels\SD.ViewModels.csproj", "{0E3755E3-D6B6-4907-8E76-C4DCD5133151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.UIElements", "SD.UIElements\SD.UIElements.csproj", "{50CBC012-E3F2-402C-BD1A-B6373DE4B06B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.UserControls", "SD.UserControls\SD.UserControls.csproj", "{B0D49C07-1236-4AC2-9856-C1ED0EB6680B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs18
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SD.UIElements\\SD.UIElements.csproj
+		SccProjectName1 = SD.UIElements
+		SccLocalPath1 = SD.UIElements
+		SccProjectUniqueName2 = SD.UserControls\\SD.UserControls.csproj
+		SccProjectName2 = SD.UserControls
+		SccLocalPath2 = SD.UserControls
+		SccProjectUniqueName3 = SD.ViewModels\\SD.ViewModels.csproj
+		SccProjectName3 = SD.ViewModels
+		SccLocalPath3 = SD.ViewModels
+		SccProjectUniqueName4 = SilverDesigner.Web\\SilverDesigner.Web.csproj
+		SccProjectName4 = SilverDesigner.Web
+		SccLocalPath4 = SilverDesigner.Web
+		SccProjectUniqueName5 = SilverDesigner\\SilverDesigner.csproj
+		SccProjectName5 = SilverDesigner
+		SccLocalPath5 = SilverDesigner
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C9D438F-9C2A-4453-8D47-E59153CEE5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9D438F-9C2A-4453-8D47-E59153CEE5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9D438F-9C2A-4453-8D47-E59153CEE5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9D438F-9C2A-4453-8D47-E59153CEE5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F02308D-B3EF-454C-BCC2-1AAFD471905C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F02308D-B3EF-454C-BCC2-1AAFD471905C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F02308D-B3EF-454C-BCC2-1AAFD471905C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F02308D-B3EF-454C-BCC2-1AAFD471905C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3755E3-D6B6-4907-8E76-C4DCD5133151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3755E3-D6B6-4907-8E76-C4DCD5133151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3755E3-D6B6-4907-8E76-C4DCD5133151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3755E3-D6B6-4907-8E76-C4DCD5133151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CBC012-E3F2-402C-BD1A-B6373DE4B06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CBC012-E3F2-402C-BD1A-B6373DE4B06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CBC012-E3F2-402C-BD1A-B6373DE4B06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CBC012-E3F2-402C-BD1A-B6373DE4B06B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D49C07-1236-4AC2-9856-C1ED0EB6680B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D49C07-1236-4AC2-9856-C1ED0EB6680B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D49C07-1236-4AC2-9856-C1ED0EB6680B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D49C07-1236-4AC2-9856-C1ED0EB6680B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

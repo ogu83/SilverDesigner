@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50CBC012-E3F2-402C-BD1A-B6373DE4B06B}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SilverDesigner</RootNamespace>
+    <AssemblyName>SDUIElements</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Data.DataForm.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Data.DataForm.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Data.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Data.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Input, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Theming.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Theming.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Toolkit.Internals, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Toolkit\dec11\Bin\System.Windows.Controls.Toolkit.Internals.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditArea.xaml.cs">
+      <DependentUpon>EditArea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IDE.xaml.cs">
+      <DependentUpon>IDE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewDocument.xaml.cs">
+      <DependentUpon>NewDocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectTree.xaml.cs">
+      <DependentUpon>ObjectTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesTool.xaml.cs">
+      <DependentUpon>PropertiesTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourcesWindow.xaml.cs">
+      <DependentUpon>ResourcesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolbarMenu.xaml.cs">
+      <DependentUpon>ToolbarMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolboxMenu.xaml.cs">
+      <DependentUpon>ToolboxMenu.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SD.ViewModels\SD.ViewModels.csproj">
+      <Project>{0e3755e3-d6b6-4907-8e76-c4dcd5133151}</Project>
+      <Name>SD.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="EditArea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IDE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewDocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ObjectTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PropertiesTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourcesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolbarMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolboxMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Actions-document-open-folder-icon.png" />
+    <Resource Include="Images\Actions-document-open-icon.png" />
+    <Resource Include="Images\Actions-document-properties-icon.png" />
+    <Resource Include="Images\Actions-document-save-as-icon.png" />
+    <Resource Include="Images\Actions-document-save-icon.png" />
+    <Resource Include="Images\image-icon.png" />
+    <Resource Include="Images\Mimetypes-application-pdf-icon.png" />
+    <Resource Include="Images\Mimetypes-application-rtf-icon.png" />
+    <Resource Include="Images\text-richtext-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow-icon_black.png" />
+    <Resource Include="Images\Arrow-icon_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Very-Basic-Hand-cursor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ImageObjectIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\page-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Actions-select-rectangular-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Movies-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Button-Pause-icon.png" />
+    <Resource Include="Images\Button-Play-icon.png" />
+    <Resource Include="Images\Button-Rewind-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
